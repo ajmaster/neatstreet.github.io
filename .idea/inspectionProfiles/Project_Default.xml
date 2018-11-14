@@ -1,0 +1,49 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="HtmlUnknownAttribute" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="myValues">
+        <value>
+          <list size="1">
+            <item index="0" class="java.lang.String" itemvalue="pullright" />
+          </list>
+        </value>
+      </option>
+      <option name="myCustomValuesEnabled" value="true" />
+    </inspection_tool>
+    <inspection_tool class="HtmlUnknownTag" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="myValues">
+        <value>
+          <list size="25">
+            <item index="0" class="java.lang.String" itemvalue="nobr" />
+            <item index="1" class="java.lang.String" itemvalue="noembed" />
+            <item index="2" class="java.lang.String" itemvalue="comment" />
+            <item index="3" class="java.lang.String" itemvalue="noscript" />
+            <item index="4" class="java.lang.String" itemvalue="embed" />
+            <item index="5" class="java.lang.String" itemvalue="script" />
+            <item index="6" class="java.lang.String" itemvalue="dropdown2" />
+            <item index="7" class="java.lang.String" itemvalue="dropdown1" />
+            <item index="8" class="java.lang.String" itemvalue="profile" />
+            <item index="9" class="java.lang.String" itemvalue="home" />
+            <item index="10" class="java.lang.String" itemvalue="mytabcontent" />
+            <item index="11" class="java.lang.String" itemvalue="headingone" />
+            <item index="12" class="java.lang.String" itemvalue="headingtwo" />
+            <item index="13" class="java.lang.String" itemvalue="panels" />
+            <item index="14" class="java.lang.String" itemvalue="collapseone" />
+            <item index="15" class="java.lang.String" itemvalue="collapsethree" />
+            <item index="16" class="java.lang.String" itemvalue="headingthree" />
+            <item index="17" class="java.lang.String" itemvalue="collapsetwo" />
+            <item index="18" class="java.lang.String" itemvalue="mymodal" />
+            <item index="19" class="java.lang.String" itemvalue="successfully" />
+            <item index="20" class="java.lang.String" itemvalue="navbar" />
+            <item index="21" class="java.lang.String" itemvalue="navbar.header" />
+            <item index="22" class="java.lang.String" itemvalue="navbar.brand" />
+            <item index="23" class="java.lang.String" itemvalue="navbar.collapse" />
+            <item index="24" class="java.lang.String" itemvalue="navitem" />
+          </list>
+        </value>
+      </option>
+      <option name="myCustomValuesEnabled" value="true" />
+    </inspection_tool>
+  </profile>
+</component>
