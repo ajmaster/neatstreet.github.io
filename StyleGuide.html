@@ -209,68 +209,12 @@ function preFormatting() {
             <!-- CONTENT -->
             <h2 class="page-header" id="form">Form</h2>
 
-            <form>
-                <fieldset>
-                    <legend>Legend</legend>
-                    <div class="form-group">
-                        <label for="exampleInputEmail">Email address</label>
-                        <input type="text" class="form-control" id="exampleInputEmail" placeholder="Enter email">
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleInputPassword">Password</label>
-                        <input type="password" class="form-control" id="exampleInputPassword" placeholder="Password">
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleInputFile">File input</label>
-                        <input type="file" id="exampleInputFile">
-                        <p class="help-block">Example block-level help text here.</p>
-                    </div>
-                    <div class="checkbox">
-                        <label>
-                            <input type="checkbox">Check me out</label>
-                    </div>
-                    <button type="submit" class="btn btn-default">Submit</button>
-                </fieldset>
-            </form>
-            <hr>
-            <form class="form-inline">
-                <input type="text" class="form-control" placeholder="Email" style="width: 200px;">
-                <input type="password" class="form-control" placeholder="Password" style="width: 200px;">
-                <div class="checkbox">
-                    <label>
-                        <input type="checkbox">Remember me</label>
-                </div>
-                <button type="submit" class="btn btn-default">Sign in</button>
-            </form>
-            <hr>
-            <form class="form-horizontal">
+            <form  class="px-4 py-3">
+                <legend>Login</legend>
                 <div class="form-group">
-                    <label for="inputEmail" class="col-lg-2 control-label">Email</label>
                     <div class="col-lg-10">
-                        <input type="text" class="form-control" id="inputEmail" placeholder="Email">
-                    </div>
-                </div>
-                <div class="form-group has-warning">
-                    <label for="inputEmail" class="col-lg-2 control-label">Email</label>
-                    <div class="col-lg-10">
-                        <input type="text" class="form-control" id="inputEmail" placeholder="Email">
-                    </div>
-                </div>
-                <div class="form-group has-error">
-                    <label for="inputEmail" class="col-lg-2 control-label">Email</label>
-                    <div class="col-lg-10">
-                        <input type="text" class="form-control" id="inputEmail" placeholder="Email">
-                    </div>
-                </div>
-                <div class="form-group has-success">
-                    <label for="inputEmail" class="col-lg-2 control-label">Email</label>
-                    <div class="col-lg-10">
-                        <input type="text" class="form-control" id="inputEmail" placeholder="Email">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="inputPassword" class="col-lg-2 control-label">Password</label>
-                    <div class="col-lg-10">
+                        <input class="form-control" id="inputUser" placeholder="Username/Email">
+                        <br>
                         <input type="password" class="form-control" id="inputPassword" placeholder="Password">
                         <div class="checkbox">
                             <label>
@@ -282,29 +226,138 @@ function preFormatting() {
             </form>
             <!-- /FORM -->
 
+            <form>
+                <fieldset>
+                    <!-- DROPDOWN -->
+                    <h2 class="page-header" id="dropdown">Dropdown</h2>
+
+                    <div class="dropdown">
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu" style="display: block; position: static;">
+                            <li class="dropdown-header">Dropdown header</li>
+                            <li class="disabled">
+                                <a tabindex="-1" href="#">Action</a>
+                            </li>
+                            <li>
+                                <a tabindex="-1" href="#">Another action</a>
+                            </li>
+                            <li>
+                                <a tabindex="-1" href="#">Something else here</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a tabindex="-1" href="#">Separated link</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /DROPDOWN -->
+                    <div class="clearfix"></div>
+                    <br>
+                    <br>
+
+                    <label for="select_location">Pick Up Location: </label>
+                    <br>
+                    <div class="dropdown" id="select_location">
+                        <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Select Location
+                            <span class="caret"></span></button>
+                        <ul class="dropdown-menu dropdown-menu">
+                            <li><a>CMU Univ - 0.5 miles away</a></li>
+                            <li><a>Library - 1.5 miles away</a></li>
+                            <li><a>Pub Park - 2 miles away </a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Choose Later</a></li>
+                        </ul>
+                    </div>
+                    <br>
+
+                    <label for="select_gender">Gender: </label>
+                    <br>
+                    <div class="dropdown" id="select_gender">
+                        <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Select Gender
+                            <span class="caret"></span></button>
+                        <ul class="dropdown-menu dropdown-menu">
+                            <li><a>Male</a></li>
+                            <li><a>Female</a></li>
+                            <li><a>Kids</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Other</a></li>
+                        </ul>
+                    </div>
+                    <br>
+                    <label for="select_size">Size: </label>
+                    <br>
+                    <div class="dropdown" id="select_size">
+                        <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Select Size
+                            <span class="caret"></span></button>
+                        <ul class="dropdown-menu dropdown-menu">
+                            <li><a>Small</a></li>
+                            <li><a>Medium</a></li>
+                            <li><a>Large</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">One Size</a></li>
+                        </ul>
+                    </div>
+                    <br>
+
+                    <div class="form-group">
+                        <label for="item_desc">Item Description</label>
+                        <textarea class="form-control" id="item_desc" placeholder="Description"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputFile">File input</label>
+                        <input type="file" id="exampleInputFile">
+                        <p class="help-block">Upload Picture of Item</p>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox">Check me out</label>
+                    </div>
+                    <button type="submit" class="btn btn-success">Post Item</button>
+                </fieldset>
+            </form>
+
+
+
             <!-- BUTTONS -->
             <h2 class="page-header" id="buttons">Buttons</h2>
 
-            <p><!-- Standard gray button with gradient -->
-                <button type="button" class="btn btn-default">Default</button>
-                <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-                <button type="button" class="btn btn-primary">Primary</button>
-                <!-- Indicates a successful or positive action -->
-                <button type="button" class="btn btn-success">Success</button>
-                <!-- Contextual button for informational alert messages -->
-                <button type="button" class="btn btn-info">Info</button>
-                <!-- Indicates caution should be taken with this action -->
-                <button type="button" class="btn btn-warning">Warning</button>
-                <!-- Indicates a dangerous or potentially negative action -->
-                <button type="button" class="btn btn-danger">Danger</button>
-                <!-- Deemphasize a button by making it look like a link while maintaining button behavior -->
-                <button type="button" class="btn btn-link">Link</button></p>
-            <p>
-                <button type="button" class="btn btn-primary btn-lg">Large</button>
-                <button type="button" class="btn btn-primary disabled">Disabled</button>
-                <button type="button" class="btn btn-primary">Default</button>
-                <button type="button" class="btn btn-primary btn-sm">Small</button>
-                <button type="button" class="btn btn-primary btn-xs">Extra Small</button></p>
+
+            <table class="table table-striped">
+                <thead>
+                <tr>
+                    <th scope="col">Type</th>
+                    <th scope="col">Small</th>
+                    <th scope="col">Primary</th>
+                    <th scope="col">Large</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">Primary</th>
+                    <td><button type="button" class="btn-sm btn-default">Choose Item</button></td>
+                    <td><button type="button" class="btn btn-default">Available Items</button></td>
+                    <td><button type="button" class="btn-lg btn-default">Home</button></td></td>
+                </tr>
+                <tr>
+                    <th scope="row">Success</th>
+                    <td><button type="button" class="btn-sm btn-success">Post Item</button></td>
+                    <td><button type="button" class="btn btn-success">Confirm</button></td>
+                    <td><button type="button" class="btn-lg btn-success">Submit</button></td>
+                </tr>
+                <tr>
+                    <th scope="row">Info</th>
+                    <td><button type="button" class="btn-sm btn-info">Filter Items</button></td>
+                    <td><button type="button" class="btn btn-info">Request Pick Up</button></td>
+                    <td><button type="button" class="btn-lg btn-info">Search</button></td>
+                </tr>
+                <tr>
+                    <th scope="row">Maintain</th>
+                    <td><button type="button" class="btn-sm btn-primary">Delete Item</button></td>
+                    <td><button type="button" class="btn btn-primary">Cancel</button></td>
+                    <td><button type="button" class="btn-lg btn-primary">Logout</button></td>
+                </tr>
+                </tbody>
+            </table>
+
             <!-- /BUTTONS -->
 
             <!-- IMAGES -->
@@ -315,49 +368,6 @@ function preFormatting() {
                 <img src="http://placehold.it/120x100" class="img-thumbnail"></p>
             <!-- /IMAGES -->
 
-            <!-- DROPDOWN -->
-            <h2 class="page-header" id="dropdown">Dropdown</h2>
-
-            <div class="dropdown">
-                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu" style="display: block; position: static;">
-                    <li class="dropdown-header">Dropdown header</li>
-                    <li class="disabled">
-                        <a tabindex="-1" href="#">Action</a>
-                    </li>
-                    <li>
-                        <a tabindex="-1" href="#">Another action</a>
-                    </li>
-                    <li>
-                        <a tabindex="-1" href="#">Something else here</a>
-                    </li>
-                    <li class="divider"></li>
-                    <li>
-                        <a tabindex="-1" href="#">Separated link</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /DROPDOWN -->
-            <div class="clearfix"></div>
-
-            <!-- INPUT GROUP -->
-            <h2 class="page-header" id="input-group">Input Group</h2>
-
-            <div class="input-group">
-                <span class="input-group-btn">                <button class="btn btn-default" type="button">Go!</button>              </span><input type="text" class="form-control" placeholder="Username">
-            </div><br>
-            <div class="input-group">
-                <label>
-                    <input type="text" class="form-control input-large">
-                </label>
-                <span class="input-group-addon input-large">.00</span>
-            </div><br>
-            <div class="input-group">
-                <span class="input-group-addon">$</span><label>
-                <input type="text" class="form-control">
-            </label>
-                <span class="input-group-addon">.00</span>
-            </div>
-            <!-- /INPUT GROUP -->
 
             <!-- NAV -->
             <h2 class="page-header" id="nav">Nav</h2>
