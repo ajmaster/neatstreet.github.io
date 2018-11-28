@@ -12,8 +12,11 @@
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
+    <!-- Font CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway|Roboto|Lato" rel="stylesheet">
+
     <!-- Insert here your custom style file(s) -->
-    <link rel="stylesheet" type="text/css" href="css/StyleGuide.css">
+    <link rel="stylesheet" type="text/css" href="css/styleGuide.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -43,16 +46,27 @@
             <!-- LOGO -->
 
             <!-- HEADINGS -->
-            <h2 class="page-header" id="headings">Headings</h2>
+            <h2 class="page-header" id="headings">Typography</h2>
 
-            <h1 class="page-header">Page Header <small>With Small Text</small></h1>
-            <h1>This is an h1 heading</h1>
-            <h2>This is an h2 heading</h2>
-            <h3>This is an h3 heading</h3>
-            <h4>This is an h4 heading</h4>
-            <h5>This is an h5 heading</h5>
-            <h6>This is an h6 heading</h6>
-            <!-- /HEADINGS -->
+            <div class="col-md-offset-1">
+                <h1 class="page-header">Page Header <small>With Small Text</small></h1>
+                <h1>This is an h1 heading</h1>
+                <h2>This is an h2 heading</h2>
+                <h3>This is an h3 heading</h3>
+                <h4>This is an h4 heading</h4>
+                <h5>This is an h5 heading</h5>
+                <h6>This is an h6 heading</h6>
+            </div>
+
+            <!-- Color -->
+            <h2 class="page-header" id="headings">Colors</h2>
+            <!-- https://hc.weebly.com/hc/en-us -->
+            <div class="alert ns-blue text-white">Neat street blue (theme)</div>
+            <div class="alert ns-orange">Neat street orange (highlights)</div>
+            <div class="alert black text-white">Black</div>
+            <div class="alert grey text-white">Grey</div>
+
+
             <!-- /NavBar -->
             <h2 class="page-header">NavBar</h2>
             <nav class="navbar navbar-default" role="navigation">
@@ -63,7 +77,9 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="#">NeatStreet</a>
+                        <a class="navbar-brand" href="#">
+                            NeatStreet
+                        </a>
                     </div>
                     <div class="collapse navbar-collapse" id="myNavbar">
                         <ul class="nav navbar-nav">
@@ -88,76 +104,256 @@
             </nav>
             <!-- /NavBar -->
 
-            <!-- TABLES -->
-            <h2 class="page-header" id="tables">Tables</h2>
+            <!-- Image thumbnails -->
+            <h2 class="page-header">Image thumbnails</h2>
+            <p>Hover the picture</p>
+            <div class="container">
+                <a class="portfolio-box" href="./img/largeBomberJacket.jpg">
+                    <img src="./img/blackjacket.png" alt="" class="img-thumbnail" width="140" height="195">
+                    <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                            <div class="project-name">
+                                Jacket
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
 
-            <table class="table table-hover">
-                <thead>
-                <tr>
-                    <th>#</th>
-                    <th>First Name</th>
-                    <th>Tables</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>Michael</td>
-                    <td>Are formatted like this</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Lucille</td>
-                    <td>Do you like them?</td>
-                </tr>
-                <tr class="success">
-                    <td>3</td>
-                    <td>Success</td>
-                    <td></td>
-                </tr>
-                <tr class="danger">
-                    <td>4</td>
-                    <td>Danger</td>
-                    <td></td>
-                </tr>
-                <tr class="warning">
-                    <td>5</td>
-                    <td>Warning</td>
-                    <td></td>
-                </tr>
-                <tr class="active">
-                    <td>6</td>
-                    <td>Active</td>
-                    <td></td>
-                </tr>
-                </tbody>
-            </table>
-            <table class="table table-striped table-bordered table-condensed">
-                <thead>
-                <tr>
-                    <th>#</th>
-                    <th>First Name</th>
-                    <th>Tables</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>Michael</td>
-                    <td>This one is bordered and condensed</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Lucille</td>
-                    <td>Do you still like it?</td>
-                </tr>
-                </tbody>
-            </table>
-            <!-- /TABLES -->
+            <!-- Image thumbnails -->
+
+            <!-- Image Gallery -->
+            <h2 class="page-header">Image Gallery One</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="thumbnail">
+                        <div class="container">
+                            <div class="top-left">
+                                <span class="badge badge-pill badge-orange">Jacket</span>
+                            </div>
+                            <a class="portfolio-box" href="./img/largeBomberJacket.jpg">
+                                <img src="./img/blackjacket.png" alt="">
+                                <div class="caption">
+                                    <p>This is a Black Jacket.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="thumbnail">
+                        <div class="container">
+                            <div class="top-left">
+                                <span class="badge badge-pill badge-blue">Jacket</span>
+                            </div>
+                            <a class="portfolio-box" href="./img/largeBomberJacket.jpg">
+                                <img src="./img/blackjacket.png" alt="">
+                                <div class="caption">
+                                    <p>This is a Black Jacket.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="thumbnail">
+                        <div class="container">
+                            <div class="top-left">
+                                <span class="badge badge-pill badge-peach">Jacket</span>
+                            </div>
+                            <a class="portfolio-box" href="./img/largeBomberJacket.jpg">
+                                <img src="./img/blackjacket.png" alt="">
+                                <div class="caption">
+                                    <p>This is a Black Jacket.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Image Gallery Two-->
+            <h2 class="page-header">Image Gallery Two</h2>
+            <div class="row text-center text-lg-left">
+                <div class="col-lg-3 col-md-4 col-xs-6">
+                    <a href="#" class="d-block mb-4 h-100">
+                        <div  class="img-container">
+                            <img class="img-fluid img-thumbnail" src="./img/shoes.jpg" alt="" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">
+                            <div class="img-caption">
+                                <p>Shoes.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-xs-6">
+                    <a href="#" class="d-block mb-4 h-100">
+                        <div  class="img-container">
+                            <img class="img-fluid img-thumbnail" src="./img/shoes.jpg" alt="">
+                            <div class="img-caption">
+                                <p>Shoes.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-xs-6">
+                    <a href="#" class="d-block mb-4 h-100">
+                        <div  class="img-container">
+                            <img class="img-fluid img-thumbnail" src="./img/shoes.jpg" alt="">
+                            <div class="img-caption">
+                                <p>Shoes.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-xs-6">
+                    <a href="#" class="d-block mb-4 h-100">
+                        <div  class="img-container">
+                            <img class="img-fluid img-thumbnail" src="./img/shoes.jpg" alt="">
+                            <div class="img-caption">
+                                <p>Shoes.</p>
+                            </div>
+                        </div>
+                    </a>
+                    <hr/>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-xs-6">
+                    <a href="#" class="d-block mb-4 h-100">
+                        <div  class="img-container">
+                            <img class="img-fluid img-thumbnail" src="./img/shoes.jpg" alt="">
+                            <div class="img-caption">
+                                <p>Shoes.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-xs-6">
+                    <a href="#" class="d-block mb-4 h-100">
+                        <div  class="img-container">
+                            <img class="img-fluid img-thumbnail" src="./img/shoes.jpg" alt="">
+                            <div class="img-caption">
+                                <p>Shoes.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-xs-6">
+                    <a href="#" class="d-block mb-4 h-100">
+                        <div  class="img-container">
+                            <img class="img-fluid img-thumbnail" src="./img/shoes.jpg" alt="">
+                            <div class="img-caption">
+                                <p>Shoes.</p>
+                            </div>
+                        </div>
+
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-xs-6">
+                    <a href="#" class="d-block mb-4 h-100">
+                        <div  class="img-container">
+                            <img class="img-fluid img-thumbnail" src="./img/shoes.jpg" alt="">
+                            <div class="img-caption">
+                                <p>Shoes.</p>
+                            </div>
+                        </div>
+                    </a>
+                    <hr/>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-xs-6">
+                    <a href="#" class="d-block mb-4 h-100">
+                        <div  class="img-container">
+                            <img class="img-fluid img-thumbnail" src="./img/shoes.jpg" alt="">
+                            <div class="img-caption">
+                                <p>Shoes.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-xs-6">
+                    <a href="#" class="d-block mb-4 h-100">
+                        <div  class="img-container">
+                            <img class="img-fluid img-thumbnail" src="./img/shoes.jpg" alt="">
+                            <div class="img-caption">
+                                <p>Shoes.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-xs-6">
+                    <a href="#" class="d-block mb-4 h-100">
+                        <div  class="img-container">
+                            <img class="img-fluid img-thumbnail" src="./img/shoes.jpg" alt="">
+                            <div class="img-caption">
+                                <p>Shoes.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-xs-6">
+                    <a href="#" class="d-block mb-4 h-100">
+                        <div  class="img-container">
+                            <img class="img-fluid img-thumbnail" src="./img/shoes.jpg" alt="">
+                            <div class="img-caption">
+                                <p>Shoes.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!-- Image Gallery Two-->
+
+            <!--Search Bar-->
+            <h2 class="page-header">Search Bar</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="input-group" id="adv-search">
+                            <input type="text" class="form-control" placeholder="Search for items" />
+                            <div class="input-group-btn">
+                                <div class="btn-group" role="group">
+                                    <div class="dropdown dropdown-lg">
+                                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="caret"></span></button>
+                                        <div class="dropdown-menu dropdown-menu-right" role="menu">
+                                            <form class="form-horizontal" role="form">
+                                                <div class="form-group">
+                                                    <label for="filter">Filter by</label>
+                                                    <select class="form-control">
+                                                        <option value="0" selected>All Items</option>
+                                                        <option value="1">Women</option>
+                                                        <option value="2">Men</option>
+                                                        <option value="3">Kids</option>
+                                                        <option value="4">Baby</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="contain">Category </label>
+                                                    <select class="form-control">
+                                                        <option value="0" selected>All Categories</option>
+                                                        <option value="1">Jacket</option>
+                                                        <option value="2">Shoes</option>
+                                                        <option value="3">Pants</option>
+                                                        <option value="4">Shirts</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="contain">Key word</label>
+                                                    <input class="form-control" type="text" />
+                                                </div>
+                                                <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Search Bar-->
 
             <!-- CONTENT -->
             <h2 class="page-header" id="content">Content</h2>
-
             <p class="lead">This is a lead paragraph.</p>
             <p>This is an <b>ordinary paragraph</b> that is <i>long enough</i> to wrap to <u>multiple lines</u> so that you can see how the line spacing looks.</p>
             <p class="text-muted">Muted color paragraph.</p>
@@ -197,13 +393,6 @@
                 </div>
             </div>
             <br>
-            <pre>
-function preFormatting() {
-    // looks like this;
-    var something = somethingElse;
-    return true;
-}
-                        </pre>
             <!-- /CONTENT -->
 
             <!-- CONTENT -->
@@ -510,6 +699,12 @@ function preFormatting() {
                 <p class="lead"><a href="#">Inbox <span class="badge">42</span></a></p>
                 <!-- /LABEL AND BADGE -->
 
+                <!-- CHAT AND MESSAGES -->
+                <h2 class="page-header" id="label-badge">Chat Messages</h2>
+                <p class="message from">The Jacket</p><br>
+                <p class="message to">Okay do you have any questions about the Jacket?</p>
+                <!-- /CHAT AND MESSAGES -->
+
                 <!-- ALERT -->
                 <h2 class="page-header" id="alert">Alert</h2>
 
@@ -794,10 +989,10 @@ function preFormatting() {
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
             <script type="text/javascript">
-              $(function () {
-                $('[data-toggle="tooltip"]').tooltip();
-                $('[data-toggle="popover"]').popover();
-              });
+                $(function () {
+                    $('[data-toggle="tooltip"]').tooltip();
+                    $('[data-toggle="popover"]').popover();
+                });
             </script>
         </div>
     </div>
